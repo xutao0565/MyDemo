@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout">
+    </FrameLayout>
+
+    <!--底部的一排按钮-->
+    <RadioGroup
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="咨询"
+            android:button="@null"
+            android:layout_weight="1"
+            android:id="@+id/rb_consult"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="订阅"
+            android:button="@null"
+            android:layout_weight="1"
+            android:id="@+id/rb_subscribe"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="行情"
+            android:button="@null"
+            android:layout_weight="1"
+            android:id="@+id/rb_market"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="数据"
+            android:button="@null"
+            android:layout_weight="1"
+            android:id="@+id/rb_information"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="个人"
+            android:button="@null"
+            android:layout_weight="1"
+            android:id="@+id/rb_personal"/>
+
+
+
+    </RadioGroup>
+</RelativeLayout>
